@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* background-image: linear-gradient(to right, #cf929d, #b1a0a0);    display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box1{
+    background-color: #ffa5b6;
+    width: 23cm;
+    height: 16cm;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ada0a0;
+    position: absolute;
+    left: 25px;
+    top: 19.2cm;
+    border-top: none;
+    z-index: 1;
+}
+
+.content-box{
+    height: 13cm;
+    width: 23cm;
+    position: absolute;
+    top: 51rem;
+    left: 25px;
+    z-index: 4;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'pacifico', cursive;
+
+}
+
+.animate{
+    animation: shake 1s infinite;
+}
+
+@keyframes  shake {
+
+    50%{
+        top: 8rem;
+    }
+}
+
+p{
+    z-index: 4;
+    text-align: unset;
+    font-size: 37px;
+}
+
+.box2{
+    background-color: #c2818d;
+    position: absolute;
+    height: 3cm;
+    width: 23cm;
+    left: 25px;
+    top: 16.19cm;
+    border-radius: 71% 71% 0 0;
+}
+
+.box3{
+    background-color: #df9ba7;
+    width: 23cm;
+    height: 466px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ada0a0;
+    position: absolute;
+    left: 25px;
+    top: 54rem;
+    border-top: none;
+    z-index: 10;
+}
+
+button{
+    position: absolute;
+    left: 394px;
+    top: 64px;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: linear-gradient(128deg, red, pink);
+    cursor: pointer;
+    color: pink;
+    transform: scale(1.2);
+    border: 3px solid pink;
+
+}
+
+button:active{
+    transform: scale(0.98);
+}
